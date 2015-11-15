@@ -28,15 +28,15 @@ ANSWER = [
 ]
 
 def shake
-  case keyboard_text = rand(20)
+  case keyboard_text = rand(19)
   when 0..4
-    then puts ANSWER[rand(6)].to_s.colorize(:blue)
+    then puts ANSWER[keyboard_text].to_s.colorize(:blue)
   when 5..9
-    then puts ANSWER[rand(6..11)].to_s.colorize(:green)
+    then puts ANSWER[keyboard_text].to_s.colorize(:green)
   when 10..14
-    then puts ANSWER[rand(11..16)].to_s.colorize(:yellow)
+    then puts ANSWER[keyboard_text].to_s.colorize(:yellow)
   when 15..20
-    then puts ANSWER[rand(16..21)].to_s.colorize(:red)
+    then puts ANSWER[keyboard_text].to_s.colorize(:red)
   end
 end
 
